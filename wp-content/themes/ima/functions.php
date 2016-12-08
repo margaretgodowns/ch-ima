@@ -55,3 +55,10 @@ array_walk($sage_includes, function ($file) {
         trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
     }
 });
+
+// Add Options Page
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page();
+
+}

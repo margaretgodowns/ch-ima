@@ -8,6 +8,7 @@
       </div>
     <![endif]-->
     <?php
+      get_template_part('partials/announcement-bar');
       do_action('get_header');
       get_template_part('partials/header');
     ?>
